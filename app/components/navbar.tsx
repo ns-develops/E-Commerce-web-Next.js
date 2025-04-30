@@ -18,10 +18,10 @@ export const Navbar = () => {
             New in
           </Link>
           <Link 
-            href="/clothes" 
+            href="/products" 
             className="bg-white text-black px-4 py-2 rounded-md shadow hover:bg-gray-200 transition"
           >
-            Clothes
+            Products
           </Link>
           <Link 
             href="/checkout" 
