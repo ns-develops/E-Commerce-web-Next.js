@@ -25,7 +25,7 @@ export default async function ProductsPage() {
                         <p className="text-neutral-600">
                             See what’s new — thoughtfully made for people and planet
                         </p>
-                        <Button asChild variant="default" className="">
+                        <Button asChild variant="default">
                             <Link href="/products" className="inline-flex items-center justify-center rounded-full px-6 py-3">
                                 Browse all products
                             </Link>
@@ -44,6 +44,21 @@ export default async function ProductsPage() {
                     )}
                 </div>
             </section>
+            
+
+            <section className="flex justify-center py-8">
+                <div style={{ position: 'relative', width: '300px', height: '80px', overflow: 'hidden' }}>
+                    <iframe 
+                        src="https://open.spotify.com/embed/track/5gLbWMM5KEp6IKqx0m0AtK" 
+                        width="100%" 
+                        height="100%" 
+                        frameBorder="0" 
+                        allow="encrypted-media"
+                        style={{ position: 'absolute', top: '0', left: '0' }}
+                    ></iframe>
+                </div>
+            </section>
+            
             <section>
                 <Carousel />
             </section>
