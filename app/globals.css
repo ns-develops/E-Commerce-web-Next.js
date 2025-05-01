@@ -38,22 +38,6 @@ a:last-child {
   align-items: center;
 }
 
-/* Base global styles using the new @layer syntax */
-@layer base {
-  /* Apply a default border style using our custom border color */
-  /* * {
-    @apply border border-[rgb(var(--color-border))];
-  } */
-
-  .border-border {
-    border-width: 2px;
-    border-color: var(--color-border);
-  }
-  body {
-    @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-foreground))];
-  }
-}
-
 
 @theme inline {
   --color-background: var(--background);
