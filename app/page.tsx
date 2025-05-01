@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import Carousel from "@/components/carousel";
+import "./page.css";
 
 export default async function Home() {
     const result = await stripe.products.list({
@@ -14,6 +15,14 @@ export default async function Home() {
 
     return (
         <div>
+           
+            <section className="scrolling-text-container">
+                <p className="scrolling-text">
+                    If you like my app-projects, do not hesitate to contact me further. I look forward hearing from you!
+                </p>
+            </section>
+
+          
             <section className="bg-neutral-100 py-8 sm:py-12">
                 <div className="mx-auto flex items-center justify-center gap-8 sm:px-16">
                     <div className="max-w-md space-y-4">
@@ -55,7 +64,7 @@ export default async function Home() {
                     ></iframe>
                 </div>
             </section>
-            
+
             <section>
                 <Carousel products={products} />
             </section>
