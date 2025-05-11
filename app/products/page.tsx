@@ -1,18 +1,18 @@
 import { stripe } from "@/lib/stripe";
+import { ProductList } from "@/components/ui/product-list";
 
 export default async function ProductsPage() {
-    const result = await stripe.products.list({
-        expand: ["data.default_price"],
-        limit: 5,
-    });
+  const result = await stripe.products.list({
+    expand: ["data.default_price"],
+  });
 
-    const products = result.data;
+  const products = result.data;
 
-    console.log(products);
+  console.log(products);
 
-    return (
-        <div>
-        Products
-        </div>
-    );
+  return (
+    <div>
+      <ProductList products={products} />
+    </div>
+  );
 }
