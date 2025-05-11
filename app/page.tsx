@@ -16,11 +16,14 @@ export default async function Home() {
     return (
         <div>
            
-            <section className="scrolling-text-container">
-                <p className="scrolling-text">
-                    If you like my app-projects, do not hesitate to contact me further. I look forward hearing from you!
-                </p>
-            </section>
+       {/* Text scrolling 
+<section className="scrolling-text-container">
+    <p className="scrolling-text">
+        This text will move
+    </p>
+</section> 
+*/}
+
 
           
             <section className="bg-neutral-100 py-8 sm:py-12">
@@ -52,18 +55,21 @@ export default async function Home() {
                 </div>
             </section>
 
-            <section className="flex justify-center py-8">
-                <div style={{ position: 'relative', width: '300px', height: '80px', overflow: 'hidden' }}>
-                    <iframe 
-                        src="https://open.spotify.com/embed/track/5gLbWMM5KEp6IKqx0m0AtK" 
-                        width="100%" 
-                        height="100%" 
-                        frameBorder="0" 
-                        allow="encrypted-media"
-                        style={{ position: 'absolute', top: '0', left: '0' }}
-                    ></iframe>
-                </div>
-            </section>
+        {/*
+<section className="flex justify-center py-8">
+    <div style={{ position: 'relative', width: '300px', height: '80px', overflow: 'hidden' }}>
+        <iframe 
+            src="https://open.spotify.com/embed/track/5gLbWMM5KEp6IKqx0m0AtK" 
+            width="100%" 
+            height="100%" 
+            frameBorder="0" 
+            allow="encrypted-media"
+            style={{ position: 'absolute', top: '0', left: '0' }}
+        ></iframe>
+    </div>
+</section>
+*/}
+
 
             <section>
                 <Carousel products={products} />
