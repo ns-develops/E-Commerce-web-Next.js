@@ -21,8 +21,8 @@ export const ProductCard = ({ product }: Props) => {
     <Image
       alt={product.name}
       src={product.images[0]}
-      width={400}  // Ange bredd
-      height={200} // Ange höjd
+      width={400}  
+      height={200} 
       objectFit="cover"
       className="transition-opacity duration-500 ease-in-out"
     />
