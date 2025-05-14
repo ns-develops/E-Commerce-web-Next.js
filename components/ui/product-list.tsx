@@ -19,14 +19,14 @@ export const ProductList = ({ products }: Props) => {
     setSearchTerm(event.target.value);
   };
 
-  // Filtrera produkter baserat på sökord
+ 
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="space-y-6">
-      {/* Sökfält */}
+  
       <div className="flex justify-center mb-6">
         <input
           type="text"
@@ -37,7 +37,7 @@ export const ProductList = ({ products }: Props) => {
         />
       </div>
 
-      {/* Grid med produkter */}
+  
       <div className="product-grid">
         {filteredProducts.map((product) => (
           <div key={product.id} className="product-card-container">

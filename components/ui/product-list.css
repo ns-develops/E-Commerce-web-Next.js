@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Search bar styles */
 .search-input {
     width: 100%;
     padding: 12px;
@@ -11,16 +9,34 @@
   }
   
   .search-input:focus {
-    border-color: #4caf50;
+    border-color: black;
     outline: none;
   }
   
-  /* Card styling */
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+  }
+  
+
+  .product-card-container {
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+  }
+ 
   .product-card {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s ease;
   }
   
@@ -29,7 +45,7 @@
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   }
   
-  /* Image styling for product cards */
+ 
   .product-card img {
     width: 100%;
     height: 200px;
@@ -37,37 +53,44 @@
     transition: opacity 0.3s ease;
   }
   
-  .product-card img:hover {
-    opacity: 0.8;
+
+  .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    text-align: left;
+  }
+ 
+  .product-info h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
   }
   
-  /* Button styling */
+  .product-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+
   .product-card .btn {
-    padding: 12px 24px;
-    background-color: #4caf50;
+    padding: 12px;
+    width: 100%;
+    background-color: #000;
     color: white;
     border-radius: 8px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border: none;
   }
   
   .product-card .btn:hover {
-    background-color: #45a049;
-  }
-  
-  /* Grid styling */
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    margin-top: 30px;
-  }
-  
-  .product-grid .product-card-container {
-    width: 100%;
-    max-width: 300px;
+    background-color: #333;
   }
   

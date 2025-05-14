@@ -2,7 +2,7 @@ import { stripe } from "@/lib/stripe";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import Carousel from "@/components/carousel";
+
 
 
 export default async function Home() {
@@ -70,10 +70,10 @@ export default async function Home() {
 </section>
 */}
 
-
+  {/*
             <section>
                 <Carousel products={products} />
-            </section>
+            </section> */}
         </div>
     );
 }
