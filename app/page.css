@@ -1,4 +1,4 @@
-
+/*
 .scrolling-text-container {
     width: 100%;
     overflow: hidden;
@@ -16,7 +16,6 @@
     font-weight: 500;
 }
 
-
 @keyframes scrollText {
     0% {
         transform: translateX(100%);
@@ -25,3 +24,4 @@
         transform: translateX(-100%);
     }
 }
+*/
