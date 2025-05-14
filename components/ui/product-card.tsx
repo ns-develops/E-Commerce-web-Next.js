@@ -15,7 +15,7 @@ export const ProductCard = ({ product }: Props) => {
   return (
     <Link href={`/products/${product.id}`}>
       <Card className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-        {/* Visa produktbild */}
+
         {product.images && product.images[0] && (
           <div className="relative h-48 w-full mb-4">
             <Image
