@@ -16,22 +16,25 @@ export const ProductCard = ({ product }: Props) => {
     <Link href={`/products/${product.id}`}>
       <Card className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
 
-        {product.images && product.images[0] && (
-          <div className="relative h-48 w-full mb-4">
-            <Image
-              alt={product.name}
-              src={product.images[0]}
-              layout="fill"
-              objectFit="cover"
-              className="transition-opacity duration-500 ease-in-out"
-            />
-          </div>
-        )}
+      {product.images && product.images[0] && (
+  <div className="relative w-full h-48 mb-4">
+    <Image
+      alt={product.name}
+      src={product.images[0]}
+      width={400}  // Ange bredd
+      height={200} // Ange höjd
+      objectFit="cover"
+      className="transition-opacity duration-500 ease-in-out"
+    />
+  </div>
+)}
+
+
 
         <CardHeader>
           <CardTitle>{product.name}</CardTitle>
           <CardContent>
-            {/* Visa priset */}
+ 
             {price?.unit_amount && (
               <p className="text-xl">
                 {(price.unit_amount / 100).toFixed(2)} SEK 

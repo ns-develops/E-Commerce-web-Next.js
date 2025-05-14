@@ -1,4 +1,4 @@
-"use client"; // Detta gör filen till en klientkomponent
+"use client"; 
 
 import Stripe from "stripe";
 import { useState } from "react";
