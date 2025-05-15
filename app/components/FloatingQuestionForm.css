@@ -1,0 +1,27 @@
+.floating-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: rgb(147, 218, 146);
+    color: white;
+    padding: 12px 30px; 
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 16px; 
+  }
+
+  .question-form {
+    position: fixed;
+    bottom: 80px;
+    right: 24px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  
