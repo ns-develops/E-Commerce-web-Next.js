@@ -2,8 +2,6 @@
 .search-input {
     width: 100%;
     padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -31,18 +29,11 @@
  
   .product-card {
     background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
-  }
-  
-  .product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   }
   
  
