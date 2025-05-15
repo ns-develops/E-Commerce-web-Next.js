@@ -7,7 +7,7 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card"
       className={cn(
-        "bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm h-full", // Add h-full for consistent height
+        "bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm h-full",
         "border-radius-0", 
         className
       )}
@@ -50,13 +50,15 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   )
 }
 
+
+
 function CardAction({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-action"
       className={cn(
         "col-start-2 row-span-2 row-start-1 self-start justify-self-end",
-        "border-radius-0", // Ensure no rounded corners for the action part
+        "border-radius-0",
         className
       )}
       {...props}
@@ -68,7 +70,7 @@ function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-content"
-      className={cn("px-6 flex-1", "border-radius-0", className)} // Ensure content takes up remaining space
+      className={cn("px-6 flex-1", "border-radius-0", className)}
       {...props}
     />
   )
@@ -78,7 +80,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-footer"
-      className={cn("flex items-center px-6 [.border-t]:pt-6", "border-radius-0", className)} // Ensure footer is at the bottom
+      className={cn("flex items-center px-6 [.border-t]:pt-6", "border-radius-0", className)} 
       {...props}
     />
   )
