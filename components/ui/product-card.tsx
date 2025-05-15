@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { CardHeader, CardTitle, CardContent } from "./card";
 import { Button } from "./button";
+import "@/components/ui/product-card"; 
 
 interface Props {
   product: Stripe.Product;
@@ -14,30 +15,28 @@ export const ProductCard = ({ product }: Props) => {
 
   return (
     <Link href={`/products/${product.id}`}>
-      <Card className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
+      <Card className="product-card">
+        {/* Image container */}
+        {product.images && product.images[0] && (
+          <div className="product-card-image">
+            <Image
+              alt={product.name}
+              src={product.images[0]}
+              width={400}  
+              height={200} 
+              objectFit="cover"
+              className="transition-opacity duration-500 ease-in-out"
+            />
+          </div>
+        )}
 
-      {product.images && product.images[0] && (
-  <div className="relative w-full h-48 mb-4">
-    <Image
-      alt={product.name}
-      src={product.images[0]}
-      width={400}  
-      height={200} 
-      objectFit="cover"
-      className="transition-opacity duration-500 ease-in-out"
-    />
-  </div>
-)}
-
-
-
+        {/* Card content */}
         <CardHeader>
           <CardTitle>{product.name}</CardTitle>
-          <CardContent>
- 
+          <CardContent className="product-card-footer">
             {price?.unit_amount && (
               <p className="text-xl">
-                {(price.unit_amount / 100).toFixed(2)} SEK 
+                {(price.unit_amount / 100).toFixed(2)} SEK
               </p>
             )}
             <Button>View Details</Button>

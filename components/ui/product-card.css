@@ -1,0 +1,49 @@
+/* Card styling */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; /* Fixed height for each card */
+  width: 100%; /* Full width */
+  background-color: white;
+  transition: all 0.3s ease;
+  padding: 16px;
+  border-radius: 0 !important; /* Explicitly remove rounded corners */
+}
+
+/* Ensuring image is responsive and covers the top part */
+.product-card-image {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Fixed height for the image */
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 0 !important; /* Remove any potential border-radius from the image container */
+}
+
+.product-card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+  border-radius: 0 !important; /* Remove any potential border-radius from the image itself */
+}
+
+/* Button and content at the bottom of the card */
+.product-card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  border-radius: 0 !important; /* Ensure footer has no border-radius */
+}
+/* Ensure no rounded corners globally */
+.card,
+.card-header,
+.card-footer,
+.card-title,
+.card-description,
+.card-content,
+.card-action {
+  border-radius: 0 !important;
+}

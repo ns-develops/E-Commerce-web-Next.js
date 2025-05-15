@@ -1,31 +1,30 @@
-/* Create a container for the text */
+
 .search-container {
     position: fixed; 
     top: 60px; 
     right: 10px; 
-    width: 23%; /* Adjust width to give space for both the label and search input */
+    width: 23%; 
     z-index: 1000;
     display: flex;
     justify-content: flex-start; 
     align-items: center; 
 }
 
-/* Styling for the Products label */
+
 .products-label {
-    font-size: 50px; /* Adjust the font size to your preference */
+    font-size: 50px;
     font-weight: normal;
-    color: #333; /* Adjust the color to match your design */
-    margin-right: 16px; /* Space between the label and the search input */
+    color: #333; 
+    margin-right: 16px; 
 }
 
-/* Wrapper around the search input and icon */
+
 .search-wrapper {
     display: flex;
-    align-items: center; /* Align the input and icon vertically */
+    align-items: center; 
     width: 100%;
 }
 
-/* Search input field */
 .search-input {
     width: 100%; 
     padding: 8px 12px; 
@@ -37,13 +36,13 @@
     transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Focus state for the search input */
+
 .search-input:focus {
     border-color: #666; 
     outline: none;
 }
 
-/* Position the search icon */
+
 .search-icon {
     position: absolute;
     right: 10px; 
@@ -55,21 +54,20 @@
     transition: color 0.3s ease; 
 }
 
-/* Search icon hover effect */
+
 .search-icon:hover {
     color: #333; 
 }
 
-/* Product grid styling */
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     justify-items: center;
-    margin-top: 30px; /* Increase the margin-top to move the cards higher up */
+    margin-top: 30px;
 }
 
-/* Optional: If you want to tweak the margin for more control */
 .product-card-container {
     width: 100%;
     max-width: 320px;
