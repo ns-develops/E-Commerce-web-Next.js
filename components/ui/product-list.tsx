@@ -30,25 +30,26 @@ export const ProductList = ({ products }: Props) => {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center mb-6">
-        <div className="search-container">
-         
-          {isSearchVisible && (
-            <input
-              type="text"
-              placeholder=""
-              className="search-input"
-              value={searchTerm}
-              onChange={handleSearchChange}
-              autoFocus
-            />
-          )}
+        <div className="flex items-center space-x-4">
+          {/* Add the Products label */}
+          <span className="products-label">Our Products</span>
 
-          <div onClick={toggleSearch} className="search-icon">
-            <Icon
-              path={mdiMagnify}
-              size={1}
-              className="search-icon"
-            />
+          {/* Search Container */}
+          <div className="search-container">
+            {isSearchVisible && (
+              <input
+                type="text"
+                placeholder="Search products..."
+                className="search-input"
+                value={searchTerm}
+                onChange={handleSearchChange}
+                autoFocus
+              />
+            )}
+
+            <div onClick={toggleSearch} className="search-icon">
+              <Icon path={mdiMagnify} size={1} className="search-icon" />
+            </div>
           </div>
         </div>
       </div>
