@@ -7,8 +7,8 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card"
       className={cn(
-        "bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm", // Removed rounded-xl
-        "border-radius-0", // Added to ensure sharp corners
+        "bg-card text-card-foreground flex flex-col gap-6 border py-6 shadow-sm h-full", // Add h-full for consistent height
+        "border-radius-0", 
         className
       )}
       {...props}
@@ -22,7 +22,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
       data-slot="card-header"
       className={cn(
         "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
-        "border-radius-0", // Ensure sharp corners here too
+        "border-radius-0", 
         className
       )}
       {...props}
@@ -68,7 +68,7 @@ function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-content"
-      className={cn("px-6", "border-radius-0", className)} // Added border-radius-0 to content
+      className={cn("px-6 flex-1", "border-radius-0", className)} // Ensure content takes up remaining space
       {...props}
     />
   )
@@ -78,7 +78,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-footer"
-      className={cn("flex items-center px-6 [.border-t]:pt-6", "border-radius-0", className)} // Added border-radius-0 to footer
+      className={cn("flex items-center px-6 [.border-t]:pt-6", "border-radius-0", className)} // Ensure footer is at the bottom
       {...props}
     />
   )

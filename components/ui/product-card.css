@@ -1,24 +1,22 @@
-/* Card styling */
 .product-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 350px; /* Fixed height for each card */
-  width: 100%; /* Full width */
+  height: 350px; 
+  width: 100%; 
   background-color: white;
   transition: all 0.3s ease;
   padding: 16px;
-  border-radius: 0 !important; /* Explicitly remove rounded corners */
+  border-radius: 0 !important; 
 }
 
-/* Ensuring image is responsive and covers the top part */
 .product-card-image {
   position: relative;
   width: 100%;
-  height: 200px; /* Fixed height for the image */
+  height: 200px; 
   margin-bottom: 16px;
   overflow: hidden;
-  border-radius: 0 !important; /* Remove any potential border-radius from the image container */
+  border-radius: 0 !important; 
 }
 
 .product-card-image img {
@@ -26,18 +24,17 @@
   width: 100%;
   height: 100%;
   transition: opacity 0.3s ease;
-  border-radius: 0 !important; /* Remove any potential border-radius from the image itself */
+  border-radius: 0 !important; 
 }
 
-/* Button and content at the bottom of the card */
 .product-card-footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
-  border-radius: 0 !important; /* Ensure footer has no border-radius */
+  border-radius: 0 !important; 
 }
-/* Ensure no rounded corners globally */
+
 .card,
 .card-header,
 .card-footer,
@@ -46,4 +43,23 @@
 .card-content,
 .card-action {
   border-radius: 0 !important;
+}
+
+/* Styling for the "View Details" button */
+.card-button {
+  padding: 8px 16px; /* Small padding to make it thin */
+  font-size: 14px; /* Adjusted text size */
+  border: 1px solid transparent; /* No border by default */
+  background-color: transparent; /* Transparent background */
+  border-radius: 4px; /* Optional: slight rounding for the square button */
+  transition: all 0.3s ease; /* Smooth transition on hover */
+  color: white;
+}
+
+/* Hover effect */
+.card-button:hover {
+  background-color: #A0E1A2; /* Light green background */
+  border-color: #A0E1A2; /* Light green border */
+  color: white;
+  cursor: pointer;
 }

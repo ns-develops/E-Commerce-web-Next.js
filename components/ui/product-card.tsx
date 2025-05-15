@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card"; 
 import Image from "next/image";
 import { CardHeader, CardTitle, CardContent } from "./card";
-import { Button } from "./button";
+import { Button } from "./button";  
 import "@/components/ui/product-card"; 
 
 interface Props {
@@ -16,7 +16,7 @@ export const ProductCard = ({ product }: Props) => {
   return (
     <Link href={`/products/${product.id}`}>
       <Card className="product-card">
-        {/* Image container */}
+       
         {product.images && product.images[0] && (
           <div className="product-card-image">
             <Image
@@ -30,19 +30,24 @@ export const ProductCard = ({ product }: Props) => {
           </div>
         )}
 
-        {/* Card content */}
-        <CardHeader>
+ 
+        <CardHeader className="product-card-title">
           <CardTitle>{product.name}</CardTitle>
-          <CardContent className="product-card-footer">
-            {price?.unit_amount && (
-              <p className="text-xl">
-                {(price.unit_amount / 100).toFixed(2)} SEK
-              </p>
-            )}
-            <Button>View Details</Button>
-          </CardContent>
         </CardHeader>
+        
+        <CardContent className="product-card-footer">
+          {price?.unit_amount && (
+            <p className="text-xl">
+              {(price.unit_amount / 100).toFixed(2)} SEK
+            </p>
+          )}
+  
+          <Button variant="viewDetails" className="card-button">
+           XS  S  M  L / View details
+          </Button>
+        </CardContent>
       </Card>
     </Link>
   );
 };
+
