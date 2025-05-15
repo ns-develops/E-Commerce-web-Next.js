@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import FloatingQuestionForm from "./components/FloatingQuestionForm"; 
+import "./page.css"; 
+
 
 export default async function Home() {
   const result = await stripe.products.list({
@@ -53,6 +55,7 @@ export default async function Home() {
           )}
         </div>
       </section>
+
 
       <FloatingQuestionForm />
     </div>

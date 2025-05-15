@@ -25,3 +25,39 @@
     }
 }
 */
+
+@media (max-width: 1024px) {
+    section .mx-auto {
+      flex-direction: column; 
+    }
+    section .max-w-md {
+      text-align: center; 
+    }
+    section .flex-shrink-0 {
+      max-width: 100%; 
+    }
+    section .text-3xl {
+      font-size: 1.75rem; 
+    }
+    section .text-neutral-600 {
+      font-size: 1rem;
+    }
+    section button {
+      font-size: 1rem; 
+    }
+  }
+  
+@media (max-width: 600px) {
+    section .text-3xl {
+      font-size: 1.5rem; 
+    }
+    section .text-neutral-600 {
+      font-size: 0.875rem;
+    }
+    section button {
+      font-size: 0.875rem;
+    }
+    section .flex-shrink-0 {
+      max-width: 100%; 
+    }
+  }
