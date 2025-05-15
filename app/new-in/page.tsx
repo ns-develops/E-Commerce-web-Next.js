@@ -16,10 +16,10 @@ export default function NewInPage() {
       <div className="carousel-container">
         <NewInCarousel>
           <div className="carousel-slide">
-            <img src="/image1.jpg" alt="Image 1" width={600} height={400} />
+            <img src="/image2.jpg" alt="Image 2" width={600} height={400} />
           </div>
           <div className="carousel-slide">
-            <img src="/image2.jpg" alt="Image 2" width={600} height={400} />
+            <img src="/image1.jpg" alt="Image 1" width={600} height={400} />
           </div>
         </NewInCarousel>
       </div>

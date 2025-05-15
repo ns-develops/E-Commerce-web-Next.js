@@ -36,7 +36,7 @@ export default async function Home() {
             <Button asChild variant="default">
               <Link
                 href="/products"
-                className="inline-flex items-center justify-center rounded-full px-7 py-4"
+                className="inline-flex items-center justify-center px-7 py-4"
               >
                 Browse all products
               </Link>

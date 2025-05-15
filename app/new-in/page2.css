@@ -1,11 +1,10 @@
-
 .new-in-container {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    text-align: center;
+    text-align: left; 
+    padding-left: 20px; 
 }
-
 
 .new-in-text {
     font-size: 70px; 
@@ -15,7 +14,6 @@
     animation: slideUp 1.5s ease-out forwards; 
 }
 
-
 @keyframes slideUp {
     0% {
         transform: translateY(100%); 
@@ -24,7 +22,6 @@
         transform: translateY(0); 
     }
 }
-
 
 .sustainable-text {
     font-size: 70px; 

@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
@@ -22,38 +22,29 @@ export default function NewInCarousel({
 
   return (
     <div className="carousel-container">
-     
-      <div className="flex transition-transform ease-out duration-500 relative">
+      <div
+        className="carousel-slides"
+        style={{ transform: `translateX(-${curr * 100}%)` }}
+      >
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`carousel-slide ${
-              curr === index ? "active" : "inactive"
-            }`}
-            style={{ width: "100%" }}
+            className={`carousel-slide ${curr === index ? "active" : "inactive"}`}
           >
             {slide}
           </div>
         ))}
       </div>
 
-
-      <div className="absolute inset-0 flex items-center justify-between p-4">
-        <button
-          onClick={prev}
-          className="carousel-nav-button"
-        >
+      <div className="carousel-navigation">
+        <button onClick={prev} className="carousel-nav-button">
           <ChevronLeft size={40} />
         </button>
-        <button
-          onClick={next}
-          className="carousel-nav-button"
-        >
+        <button onClick={next} className="carousel-nav-button">
           <ChevronRight size={40} />
         </button>
       </div>
 
-  
       <div className="carousel-dots">
         {slides.map((_, i) => (
           <div
