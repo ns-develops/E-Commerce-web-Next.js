@@ -14,8 +14,8 @@ export const ProductCard = ({ product }: Props) => {
   const price = product.default_price as Stripe.Price;
 
   return (
-    <Link href={`/products/${product.id}`}>
-      <Card className="product-card">
+    <Link href={`/products/${product.id}`} className="block">
+      <Card className="product-card cursor-pointer">
        
         {product.images && product.images[0] && (
           <div className="product-card-image">
@@ -24,13 +24,12 @@ export const ProductCard = ({ product }: Props) => {
               src={product.images[0]}
               width={400}  
               height={200} 
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               className="transition-opacity duration-500 ease-in-out"
             />
           </div>
         )}
 
- 
         <CardHeader className="product-card-title">
           <CardTitle>{product.name}</CardTitle>
         </CardHeader>
@@ -50,4 +49,3 @@ export const ProductCard = ({ product }: Props) => {
     </Link>
   );
 };
-
