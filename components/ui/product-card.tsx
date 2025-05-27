@@ -41,9 +41,13 @@ export const ProductCard = ({ product }: Props) => {
             </p>
           )}
   
-          <Button variant="viewDetails" className="card-button">
-           XS  S  M  L / View details
-          </Button>
+  <Button
+  variant="viewDetails"
+  className="card-button text-foreground hover:bg-accent"
+>
+  XS&nbsp; S&nbsp; M&nbsp; L / View details
+</Button>
+
         </CardContent>
       </Card>
     </Link>

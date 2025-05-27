@@ -8,7 +8,8 @@
   transition: all 0.3s ease;
   padding: 16px;
   border-radius: 0 !important; 
-}
+
+  }
 
 .product-card-image {
   position: relative;
