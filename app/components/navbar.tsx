@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ShoppingCartIcon } from "@heroicons/react/24/outline";
+{/*import { ShoppingCartIcon } from "@heroicons/react/24/outline"; for adding cart icon*/}
 import { useCartStore } from "@/public/store/cart-store";
 import { useEffect } from "react";
 
