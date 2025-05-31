@@ -1,0 +1,16 @@
+.cart-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 0.65rem; 
+    font-weight: 600;
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px; /* if round */
+    margin-left: 4px;
+    position: relative;
+    top: -6px; /* moves up */
+  }
+  

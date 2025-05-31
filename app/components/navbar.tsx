@@ -1,13 +1,13 @@
 "use client";
 
 import Link from "next/link";
-{/*import { ShoppingCartIcon } from "@heroicons/react/24/outline"; for adding cart icon*/}
 import { useCartStore } from "@/public/store/cart-store";
 import { useEffect } from "react";
+import "./navbar.css"; 
 
 export const Navbar = () => {
   const { items } = useCartStore();
-  const cartCount = items.reduce((acc, item) => acc + item.quantity, 0); 
+  const cartCount = items.reduce((acc, item) => acc + item.quantity, 0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -25,33 +25,26 @@ export const Navbar = () => {
         </Link>
 
         <div className="flex ml-auto space-x-6">
-          <Link
-            href="/new-in"
-            className="bg-white text-black px-4 py-2 rounded-md shadow hover:bg-gray-200 transition"
-          >
+          <Link href="/new-in" className="bg-white text-black px-4 py-2 rounded-md shadow hover:bg-gray-200 transition">
             New in
           </Link>
-          <Link
-            href="/products"
-            className="bg-white text-black px-4 py-2 rounded-md shadow hover:bg-gray-200 transition"
-          >
+          <Link href="/products" className="bg-white text-black px-4 py-2 rounded-md shadow hover:bg-gray-200 transition">
             Products
           </Link>
-          <Link
-            href="/checkout"
-            className="bg-white text-black px-4 py-2 rounded-md shadow hover:bg-gray-200 transition"
-          >
-            
+          <Link href="/checkout" className="bg-white text-black px-4 py-2 rounded-md shadow hover:bg-gray-200 transition">
+         
           </Link>
         </div>
 
         <div className="flex items-center space-x-4">
-  <Link href="/checkout" className="flex items-center">
-    {/* <ShoppingCartIcon className="h-6 w-6 text-black" /> with icon */}
-    Shopping cart            
-    {cartCount > 0 && <span>{cartCount}</span>}
-  </Link>
-</div>
+          <Link href="/checkout" className="flex items-center">
+            {/* <ShoppingCartIcon className="h-6 w-6 text-black" /> with icon */}
+            Shopping cart
+            {cartCount > 0 && (
+              <span className="cart-badge">{cartCount}</span>
+            )}
+          </Link>
+        </div>
       </div>
     </nav>
   );
