@@ -32,18 +32,13 @@ export const Navbar = () => {
             Products
           </Link>
           <Link href="/checkout" className="bg-white text-black px-4 py-2 rounded-md shadow hover:bg-gray-200 transition">
-         
-          </Link>
-        </div>
-
-        <div className="flex items-center space-x-4">
-          <Link href="/checkout" className="flex items-center">
-            {/* <ShoppingCartIcon className="h-6 w-6 text-black" /> with icon */}
-            Shopping cart
+           {/* <ShoppingCartIcon className="h-6 w-6 text-black" /> with icon */}
+           Shopping cart
             {cartCount > 0 && (
               <span className="cart-badge">{cartCount}</span>
             )}
           </Link>
+      
         </div>
       </div>
     </nav>
