@@ -14,6 +14,7 @@
     font-size: 1.0rem;
     color: #333;
     font-weight: 500;
+    font-family: 'Instrument Sans', sans-serif;
 }
 
 @keyframes scrollText {
@@ -26,36 +27,85 @@
 }
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
+
+body {
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+
+.button-default {
+  background-color: #000000; 
+  color: #ffffff; 
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 0.75rem 3rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.button-default:hover {
+  background-color: #222222; 
+  box-shadow: 0 8px 20px rgba(34, 34, 34, 0.6);
+}
+
+.button-default:focus-visible {
+  outline: 3px solid #444444;
+  outline-offset: 3px;
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+@media (max-width: 640px) {
+  .button-default {
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+}
+
 @media (max-width: 1024px) {
     section .mx-auto {
       flex-direction: column; 
     }
     section .max-w-md {
-      text-align: center; 
+      text-align: center;
+      font-family: 'Instrument Sans', sans-serif;
     }
     section .flex-shrink-0 {
       max-width: 100%; 
     }
     section .text-3xl {
-      font-size: 1.75rem; 
+      font-size: 1.75rem;
+      font-family: 'Instrument Sans', sans-serif;
     }
     section .text-neutral-600 {
       font-size: 1rem;
+      font-family: 'Instrument Sans', sans-serif;
     }
     section button {
-      font-size: 1rem; 
+      font-size: 1rem;
+      font-family: 'Instrument Sans', sans-serif;
     }
   }
   
 @media (max-width: 600px) {
     section .text-3xl {
-      font-size: 1.5rem; 
+      font-size: 1.5rem;
+      font-family: 'Instrument Sans', sans-serif;
     }
     section .text-neutral-600 {
       font-size: 0.875rem;
+      font-family: 'Instrument Sans', sans-serif;
     }
     section button {
       font-size: 0.875rem;
+      font-family: 'Instrument Sans', sans-serif;
     }
     section .flex-shrink-0 {
       max-width: 100%; 

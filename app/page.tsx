@@ -5,7 +5,6 @@ import Link from "next/link";
 import FloatingQuestionForm from "./components/FloatingQuestionForm"; 
 import "./page.css"; 
 
-
 export default async function Home() {
   const result = await stripe.products.list({
     expand: ["data.default_price"],
@@ -16,14 +15,6 @@ export default async function Home() {
 
   return (
     <div>
-      {/* Text scrolling 
-      <section className="scrolling-text-container">
-        <p className="scrolling-text">
-          This text will move
-        </p>
-      </section> 
-      */}
-
       <section className="bg-neutral-100 py-8 sm:py-12">
         <div className="mx-auto flex items-center justify-center gap-8 sm:px-16">
           <div className="max-w-md space-y-4">
@@ -33,11 +24,8 @@ export default async function Home() {
             <p className="text-neutral-600">
               See what’s new — thoughtfully made for people and planet
             </p>
-            <Button asChild variant="default">
-              <Link
-                href="/products"
-                className="inline-flex items-center justify-center px-7 py-4"
-              >
+            <Button variant="default" asChild>
+              <Link href="/products">
                 Browse all products
               </Link>
             </Button>
@@ -55,7 +43,6 @@ export default async function Home() {
           )}
         </div>
       </section>
-
 
       <FloatingQuestionForm />
     </div>
