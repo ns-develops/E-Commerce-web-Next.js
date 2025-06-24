@@ -33,33 +33,31 @@ body {
   font-family: 'Instrument Sans', sans-serif;
 }
 
-
-.button-default {
-  background-color: #000000; 
-  color: #ffffff; 
-  font-weight: 700;
-  font-size: 1.25rem;
-  padding: 0.75rem 3rem;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none; 
-  font-family: 'Instrument Sans', sans-serif;
+.browse-button {
+  background-color: #111827;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.button-default:hover {
-  background-color: #222222; 
-  box-shadow: 0 8px 20px rgba(34, 34, 34, 0.6);
+.browse-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
-.button-default:focus-visible {
-  outline: 3px solid #444444;
-  outline-offset: 3px;
-  font-family: 'Instrument Sans', sans-serif;
+.browse-button:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 @media (max-width: 640px) {

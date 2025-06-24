@@ -1,3 +1,4 @@
+/* 
 .floating-btn {
     position: fixed;
     bottom: 24px;
@@ -10,9 +11,9 @@
     cursor: pointer;
     z-index: 1000;
     font-size: 16px; 
-  }
-
-  .question-form {
+}
+*/
+.question-form {
     position: fixed;
     bottom: 80px;
     right: 24px;
@@ -23,5 +24,29 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     border-radius: 8px;
     z-index: 1000;
-  }
-  
+}
+.floating-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #d4d0c8; 
+  color: black;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #808080;
+  border-right-color: white;
+  border-bottom-color: white;
+  border-radius: 2px;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #404040;
+  cursor: pointer;
+  z-index: 1000;
+  user-select: none;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+}
+
+.floating-btn:active {
+  box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #404040; /* Tryckt effekt */
+}
