@@ -1,0 +1,130 @@
+
+.checkout-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.order-card {
+  max-width: 650px;
+  width: 100%;
+}
+
+.order-list {
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  list-style: none;
+}
+
+.order-list > li {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.order-list > li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+.order-list > li > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.order-list > li > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.order-list button {
+  min-width: 36px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  border: 1.5px solid black;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.order-list button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.order-list span.text-xl {
+  font-weight: 600;
+}
+
+
+.total-price {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-color: #e5e7eb;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+  color: #111827;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.checkout-form {
+  margin-top: 2rem;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkout-button {
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 0.75rem 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: black;
+}
+
+.checkout-button:focus-visible {
+  outline: 3px solid black;
+  outline-offset: 3px;
+}
+
+/* Responsivt */
+@media (max-width: 640px) {
+  .checkout-button {
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+
+  .order-list,
+  .total-price,
+  .checkout-form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .order-card {
+    max-width: 100%;
+  }
+}
