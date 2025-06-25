@@ -2,8 +2,8 @@
 
 Instructions to test the payment process, use Stripe's official test card:
 
-
-Card number:```bash 4242 4242 4242 4242```
+```bash
+Card number: 4242 4242 4242 4242```
 
 Expiry Date: Any future date (e.g 12/34),
 
