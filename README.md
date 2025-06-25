@@ -10,6 +10,8 @@ CVC: Any 3 digits (e.g., 123),
 
 Date: Any 5 digits (e.g., 123),
 
-This test card will simulate a successful payment using Stripe Test Mode. No real money is involved.
+This test card will simulate a successful payment using Stripe Test Mode.
+
+No real money is involved.
 
 ```
