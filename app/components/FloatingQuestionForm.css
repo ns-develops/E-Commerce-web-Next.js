@@ -29,8 +29,8 @@
   position: fixed;
   bottom: 24px;
   right: 24px;
-  background-color: #d4d0c8; 
-  color: black;
+  background-color: black; 
+  color: white; /* Ändrat från black till white */
   padding: 6px 16px;
   font-size: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
