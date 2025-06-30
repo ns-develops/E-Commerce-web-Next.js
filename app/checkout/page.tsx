@@ -32,7 +32,7 @@ export default function CheckoutPage() {
                 <div className="flex justify-between items-center">
                   <span className="font-medium text-lg">{item.name}</span>
                   <span className="font-semibold text-lg">
-                    ${(item.price * item.quantity / 100).toFixed(2)}
+                    {(item.price * item.quantity / 100).toFixed(2)} SEK
                   </span>
                 </div>
                 <div className="flex items-center gap-4">
@@ -58,7 +58,7 @@ export default function CheckoutPage() {
             ))}
           </ul>
           <div className="mt-6 border-t border-gray-300 pt-4 text-2xl font-semibold text-right total-price">
-            Total: ${(total / 100).toFixed(2)}
+            Total: {(total / 100).toFixed(2)} SEK
           </div>
         </CardContent>
       </Card>

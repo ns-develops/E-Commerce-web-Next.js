@@ -29,24 +29,25 @@
   position: fixed;
   bottom: 24px;
   right: 24px;
-  background-color: black; 
-  color: white; /* Ändrat från black till white */
-  padding: 6px 16px;
-  font-size: 13px;
+  background-color: black;
+  color: white;
+  padding: 10px 24px;          
+  font-size: 14px;          
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: 2px solid #808080;
-  border-right-color: white;
-  border-bottom-color: white;
-  border-radius: 2px;
-  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #404040;
+  border: none;                
+  border-radius: 9999px;      
+  box-shadow: none;           
   cursor: pointer;
   z-index: 1000;
   user-select: none;
+  white-space: nowrap;
   width: auto;
   height: auto;
-  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
+
 .floating-btn:active {
-  box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #404040; /* Tryckt effekt */
+  background-color: #222;      
+  transform: scale(0.98);    
 }

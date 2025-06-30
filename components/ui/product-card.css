@@ -46,20 +46,23 @@
   border-radius: 0 !important;
 }
 
-
 .card-button {
-  padding: 8px 16px;
-  font-size: 14px; 
-  border: 1px solid transparent; 
-  background-color: transparent; 
-  border-radius: 4px; 
-  transition: all 0.3s ease; 
+  background-color: black;
   color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  user-select: none;
+  box-shadow: none;
 }
 
 .card-button:hover {
-  background-color: #A0E1A2; 
-  border-color: #A0E1A2;
+  background-color: #222;
   color: white;
-  cursor: pointer;
+  box-shadow: none; 
 }
