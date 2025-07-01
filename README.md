@@ -1,4 +1,4 @@
-<pre>
+
 Instructions to test the payment process, use Stripe's official test card:
 
 ```bash
@@ -11,4 +11,4 @@ CVC: Any 3 digits (e.g 123),
 This test card will simulate a successful payment using Stripe Test Mode.
 
 No real money is involved
-</pre>
+
