@@ -66,3 +66,5 @@ export const ProductList = ({ products }: Props) => {
     </div>
   );
 };
+
+/*updating responsive hamburgar menu navbar later*/
